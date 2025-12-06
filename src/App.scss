@@ -1,0 +1,56 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.background-text {
+  line-height: 1.5;
+  font-size: 30px;
+  max-width: 878px;
+  color: #000;
+}
+
+.logo-block {
+  margin-top: -120px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 18px;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
+  backdrop-filter: blur(3px);
+  border: 1px solid white;
+  color: #fff;
+  font-weight: bold;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0) 60%
+    );
+    transform: rotate(25deg);
+  }
+}
+
